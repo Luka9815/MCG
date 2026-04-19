@@ -1,9 +1,0 @@
-{
-  "layout": "base.njk",
-  "lang": "ka",
-  "navHome": "მთავარი",
-  "navServices": "სერვისები",
-  "navAbout": "ჩვენს შესახებ",
-  "navContact": "კონტაქტი",
-  "bookBtn": "დაჯავშნა"
-}

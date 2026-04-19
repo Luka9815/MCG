@@ -1,9 +1,0 @@
-{
-  "layout": "base.njk",
-  "lang": "ru",
-  "navHome": "Главная",
-  "navServices": "Услуги",
-  "navAbout": "О нас",
-  "navContact": "Контакты",
-  "bookBtn": "Запись"
-}

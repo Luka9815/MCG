@@ -1,9 +1,0 @@
-{
-  "layout": "base.njk",
-  "lang": "en",
-  "navHome": "Home",
-  "navServices": "Services",
-  "navAbout": "About",
-  "navContact": "Contact",
-  "bookBtn": "Book now"
-}
