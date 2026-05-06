@@ -1,17 +1,108 @@
 ---
-title: Millennium Consulting Georgia
+title: MCG — Georgian Wine & Spirits Export
 pageRelPath: index.html
 bodyClass: home-page
 ---
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <h1 class="h1">10+ years in international trade<br>31 contracted partners<br>16 countries</h1>
-      <p class="lead">Full-cycle export and marketing services.</p>
+      <h1 class="h1">{{ en.hero.headline }}</h1>
+      <p class="lead">{{ en.hero.subtext }}</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="book.html">Book a consultation</a>
-        <a class="btn" href="services.html">View services</a>
+        <a class="btn btn-primary" href="services.html">{{ en.hero.cta_primary }}</a>
+        <a class="btn" href="#process">{{ en.hero.cta_secondary }}</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      {% for stat in en.stats %}
+      <div class="stat-item">
+        <div class="stat-value">{{ stat.value }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">{{ en.services.heading }}</h2>
+    <p class="section-sub">{{ en.services.subheading }}</p>
+    <div class="svc-grid svc-grid--2">
+      {% for card in en.services.cards %}
+      <div class="svc-card svc-card--text">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card about-teaser">
+      <h2>{{ en.about.heading }}</h2>
+      <p>{{ en.about.body }}</p>
+      <a class="btn btn-primary" href="about.html">{{ en.about.cta }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="container">
+    <h2 class="section-heading">{{ en.process.heading }}</h2>
+    <p class="section-sub">{{ en.process.subheading }}</p>
+    <div class="process-grid">
+      {% for phase in en.process.phases %}
+      <div class="phase-card">
+        <div class="phase-number">{{ phase.number }}</div>
+        <h3 class="phase-title">{{ phase.title }}</h3>
+        <p class="phase-desc">{{ phase.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section markets-section">
+  <div class="container">
+    <h2 class="section-heading">{{ en.markets.heading }}</h2>
+    <p class="section-sub">{{ en.markets.subheading }}</p>
+    <div id="mcg-map" style="height:440px"></div>
+    <script>
+    (function(){
+      var countries = {{ en.markets.countries | dump | safe }};
+      var map = L.map('mcg-map', { scrollWheelZoom: false, zoomControl: true }).setView([45, 20], 2);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+        maxZoom: 19
+      }).addTo(map);
+      var dotIcon = L.divIcon({
+        className: 'mcg-marker',
+        html: '<div class="mcg-marker-dot"></div>',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8],
+        popupAnchor: [0, -12]
+      });
+      countries.forEach(function(c){
+        var popup = '<strong>' + c.name + '</strong>' + (c.note ? '<br><span>' + c.note + '</span>' : '');
+        L.marker([c.lat, c.lng], { icon: dotIcon }).addTo(map).bindPopup(popup);
+      });
+    })();
+    </script>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>{{ en.cta_band.heading }}</h2>
+    <p>{{ en.cta_band.subtext }}</p>
+    <a class="btn btn-primary" href="contact.html">{{ en.cta_band.button }}</a>
   </div>
 </section>

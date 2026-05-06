@@ -8,6 +8,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Oswald:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <link rel="stylesheet" href="{{ assets }}/css/style.css" />
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
@@ -31,7 +36,7 @@
         <a{% if lang == "en" %} class="active"{% endif %} href="{{ langBase }}en/{{ pageRelPath }}" title="English"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="English"></a>
         <a{% if lang == "ru" %} class="active"{% endif %} href="{{ langBase }}ru/{{ pageRelPath }}" title="Russian"><img src="https://cdn-icons-png.flaticon.com/512/197/197408.png" alt="Russian"></a>
       </div>
-      <a class="btn btn-primary" href="{{ base }}book.html">{{ bookBtn }}</a>
+      <a class="btn btn-primary" href="{{ base }}contact.html">{{ ka.nav_cta if lang == 'ka' else (ru.nav_cta if lang == 'ru' else en.nav_cta) }}</a>
     </div>
   </div>
 </header>

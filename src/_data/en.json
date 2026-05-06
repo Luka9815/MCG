@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "MCG — Georgian Wine & Spirits Export",
+    "description": "MCG connects Georgian wine and spirits producers to international markets through expert export management, import sourcing, and brand marketing."
+  },
+  "hero": {
+    "headline": "Georgian Wine & Spirits,\nConnected to the World",
+    "subtext": "MCG is a Tbilisi-based trade and marketing consultancy. Our founding team brings over [X] years of combined export and marketing experience from Georgia's leading wineries.",
+    "cta_primary": "Our Services",
+    "cta_secondary": "How We Work"
+  },
+  "stats": [
+    { "value": "[X]+", "label": "Years Combined Experience" },
+    { "value": "15+", "label": "Markets Served" },
+    { "value": "[X]+", "label": "Brands Represented" },
+    { "value": "[X]+", "label": "Export Partnerships" }
+  ],
+  "services": {
+    "heading": "What We Do",
+    "subheading": "End-to-end trade and marketing support for Georgian producers entering international markets.",
+    "cards": [
+      {
+        "title": "Export Operations",
+        "description": "Full-cycle export management — logistics coordination, documentation, customs compliance, and buyer relationship management across 15+ markets."
+      },
+      {
+        "title": "Import & Sourcing",
+        "description": "Strategic sourcing and import facilitation for international spirits, wines, and beverage brands entering the Georgian market."
+      },
+      {
+        "title": "Brand & Marketing",
+        "description": "Market positioning, brand development, trade event representation, and promotional strategy tailored to international buyers and distributors."
+      },
+      {
+        "title": "Trade Consulting",
+        "description": "Market entry analysis, regulatory guidance, distributor identification, and commercial negotiation support for producers at any stage of internationalisation."
+      }
+    ]
+  },
+  "about": {
+    "heading": "Built on Real Export Experience",
+    "body": "MCG was founded by former export and marketing managers from major Georgian wineries. The team brings an established network spanning 15 countries, direct relationships with distributors and buyers, and a track record of taking Georgian wine and spirits into new markets. We work as an extension of your team — handling the complexity of international trade so you can focus on what you produce.",
+    "cta": "About MCG"
+  },
+  "process": {
+    "heading": "How We Work",
+    "subheading": "A structured approach from first conversation to active market presence.",
+    "phases": [
+      {
+        "number": "01",
+        "title": "Market Assessment",
+        "description": "We analyse target markets, identify the right entry points, and map the competitive landscape for your product category."
+      },
+      {
+        "number": "02",
+        "title": "Strategy & Planning",
+        "description": "We define the route to market, pricing structure, positioning, and a realistic timeline based on your capacity and goals."
+      },
+      {
+        "number": "03",
+        "title": "Market Entry",
+        "description": "We activate distributor and buyer relationships, manage documentation and logistics, and represent your brand at the point of entry."
+      },
+      {
+        "number": "04",
+        "title": "Growth & Development",
+        "description": "We monitor performance, support marketing activity in-market, and identify opportunities to expand volume and territory."
+      }
+    ]
+  },
+  "markets": {
+    "heading": "Our Network",
+    "subheading": "The founding team's established relationships span 15 countries across Europe, Asia, and North America.",
+    "countries": [
+      {"name":"Germany","lat":51.2,"lng":10.5,"note":""},
+      {"name":"Poland","lat":51.9,"lng":19.1,"note":""},
+      {"name":"Netherlands","lat":52.1,"lng":5.3,"note":""},
+      {"name":"United Kingdom","lat":51.5,"lng":-0.1,"note":""},
+      {"name":"France","lat":46.2,"lng":2.2,"note":""},
+      {"name":"United States","lat":38.9,"lng":-95.7,"note":""},
+      {"name":"Canada","lat":56.1,"lng":-106.3,"note":""},
+      {"name":"China","lat":35.9,"lng":104.2,"note":""},
+      {"name":"Japan","lat":36.2,"lng":138.3,"note":""},
+      {"name":"South Korea","lat":35.9,"lng":127.8,"note":""},
+      {"name":"Kazakhstan","lat":48.0,"lng":66.9,"note":""},
+      {"name":"Ukraine","lat":48.4,"lng":31.2,"note":""},
+      {"name":"Czech Republic","lat":49.8,"lng":15.5,"note":""},
+      {"name":"Latvia","lat":56.9,"lng":24.6,"note":""},
+      {"name":"Estonia","lat":58.6,"lng":25.0,"note":""}
+    ]
+  },
+  "nav_cta": "Get in Touch",
+  "cta_band": {
+    "heading": "Ready to Enter New Markets?",
+    "subtext": "Tell us where you want to go. We'll tell you how to get there.",
+    "button": "Start the Conversation"
+  },
+  "footer": {
+    "tagline": "Georgian Wine & Spirits. Connected to the World.",
+    "address": "[Address, Tbilisi, Georgia]",
+    "email": "[email@mcg.ge]",
+    "phone": "[+995 XXX XXX XXX]",
+    "copyright": "MCG. All rights reserved."
+  }
+}
