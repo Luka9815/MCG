@@ -2,58 +2,16 @@
 title: About — Millennium Consulting Georgia
 pageRelPath: about.html
 ---
-<div class="page-hero">
-  <div class="container">
-    <h1>{{ en.about_page.heading }}</h1>
-    <p>{{ en.about_page.subtitle }}</p>
-  </div>
-</div>
+<div class="page-title"><div class="container">
+  <h1>About</h1>
+  <p>Specialized consulting for wine &amp; spirits export.</p>
+</div></div>
 
-<section class="section">
-  <div class="container">
-    <div class="section-rule"></div>
-    <div class="about-intro">
-      {% for para in en.about_page.intro %}
-      <p>{{ para }}</p>
-      {% endfor %}
-    </div>
+<section class="section"><div class="container">
+  <div class="card">
+    <p style="margin:0;color:rgba(245,247,250,.84)">
+      Millennium Consulting Georgia helps producers sell internationally and helps global partners source high-quality Georgian products with confidence.
+      We combine compliance guidance, commercial support, and practical execution across the export process.
+    </p>
   </div>
-</section>
-
-<section class="section--light">
-  <div class="container">
-    <div class="credentials-grid">
-      {% for stat in en.stats %}
-      <div class="credential-item">
-        <div class="credential-value">{{ stat.value }}</div>
-        <div class="credential-label">{{ stat.label }}</div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2 class="section-heading">{{ en.about_page.what_we_bring_heading }}</h2>
-    <div class="section-rule"></div>
-    <div class="what-we-bring-grid">
-      {% for card in en.about_page.cards %}
-      <div class="bring-card">
-        <h3>{{ card.title }}</h3>
-        <p>{{ card.body }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section--light">
-  <div class="container">
-    <div class="card" style="max-width:600px">
-      <h2 style="font-size:24px;margin-bottom:12px;">{{ en.about_page.cta_heading }}</h2>
-      <p style="font-family:'Manrope',sans-serif;font-size:15px;color:var(--text-muted);margin:0 0 20px;line-height:1.7;">{{ en.about_page.cta_body }}</p>
-      <a class="btn btn-primary" href="contact.html">{{ en.about_page.cta_button }}</a>
-    </div>
-  </div>
-</section>
+</div></section>
