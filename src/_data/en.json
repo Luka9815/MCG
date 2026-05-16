@@ -86,7 +86,222 @@
       {"name":"Ukraine","lat":48.4,"lng":31.2,"note":""},
       {"name":"Czech Republic","lat":49.8,"lng":15.5,"note":""},
       {"name":"Latvia","lat":56.9,"lng":24.6,"note":""},
-      {"name":"Estonia","lat":58.6,"lng":25.0,"note":""}
+      {"name":"Estonia","lat":58.6,"lng":25.0,"note":""},
+      {"name":"Lithuania","lat":55.17,"lng":23.88,"note":""}
+    ]
+  },
+  "services_hub": {
+    "heading": "Our Services",
+    "subheading": "End-to-end trade, marketing, and advisory support for Georgian wine and spirits producers.",
+    "cards": [
+      {
+        "slug": "new-partner-acquisition",
+        "title": "New Partner Acquisition",
+        "teaser": "Identify, approach, and contract distribution partners in new export markets."
+      },
+      {
+        "slug": "existing-partner-management",
+        "title": "Existing Partner Management",
+        "teaser": "Active management of your current distributor and buyer relationships."
+      },
+      {
+        "slug": "marketing-services",
+        "title": "Marketing",
+        "teaser": "Brand positioning, trade event representation, and social media management."
+      },
+      {
+        "slug": "foreign-companies",
+        "title": "Services for Foreign Companies",
+        "teaser": "Market entry support for international brands entering Georgia."
+      },
+      {
+        "slug": "additional-services",
+        "title": "Additional Services",
+        "teaser": "Specialist support including training and ISO certification guidance."
+      }
+    ]
+  },
+  "services_detail": {
+    "included_heading": "What's Included",
+    "cta_heading": "Ready to Get Started?",
+    "cta_body": "Tell us about your business and what you're trying to achieve. We'll come back with a clear proposal.",
+    "new_partner_acquisition": {
+      "page_title": "New Partner Acquisition",
+      "page_subtitle": "Market selection and partner sourcing, outreach, negotiation, and contracting support.",
+      "headline": "Enter New Markets with Confidence",
+      "body": [
+        "Finding the right distribution partner in a new market is one of the hardest parts of international trade. It requires deep local knowledge, existing relationships, and the ability to negotiate from a position of credibility. MCG's founding team has spent years building exactly that network across more than 15 countries.",
+        "We manage the full acquisition cycle — from identifying which markets represent the best opportunity for your product, to mapping the distribution landscape, approaching the right decision-makers, and supporting you through commercial negotiations and contracting.",
+        "Every market engagement is tailored to your product category, price point, and capacity. We don't send blind cold outreach — we leverage personal relationships with buyers and distributors built over years of active export work."
+      ],
+      "included": [
+        "Market selection and opportunity analysis",
+        "Competitive landscape mapping",
+        "Target partner identification and ranking",
+        "Decision-maker research and initial outreach",
+        "Commercial offer preparation and presentation",
+        "Trade fair identification, organisation, and representation",
+        "Product sample coordination and dispatch",
+        "Commercial and legal term negotiation",
+        "Contract drafting and finalisation support"
+      ]
+    },
+    "existing_partner_management": {
+      "page_title": "Existing Partner Management",
+      "page_subtitle": "Active management of your current distributor and buyer relationships.",
+      "headline": "Protect and Grow What You've Built",
+      "body": [
+        "Winning a distribution partner is the beginning, not the end. Markets evolve, terms need updating, and relationships require active management to stay productive. Without consistent attention, even strong partnerships underperform.",
+        "MCG acts as your permanent point of contact in-market — handling day-to-day partner communication, performance monitoring, and commercial updates so your team can focus elsewhere.",
+        "We identify when a partnership is underperforming and why, and take corrective action before problems escalate. We also look for organic opportunities to grow existing accounts through range extensions, promotional activity, and volume commitments."
+      ],
+      "included": [
+        "Ongoing partner communication and relationship management",
+        "Sales performance tracking and reporting",
+        "Pricing and terms review and negotiation",
+        "Order and documentation coordination",
+        "Issue resolution and dispute management",
+        "Promotional activity coordination",
+        "Range extension and upsell identification",
+        "Annual account review preparation"
+      ]
+    },
+    "marketing_services": {
+      "page_title": "Marketing",
+      "page_subtitle": "Brand positioning, trade event representation, and social media management.",
+      "headline": "Position Your Brand for International Success",
+      "body": [
+        "Georgian wine and spirits carry an exceptional story — ancient traditions, unique grape varieties, a winemaking culture unlike anywhere else in the world. MCG helps producers translate that story into positioning that resonates with international buyers, distributors, and end consumers.",
+        "Our marketing work spans brand strategy through to execution — from defining how your brand sits in a crowded international market to representing it at trade events and managing its presence on digital channels.",
+        "Social media management is part of this service. We manage content creation, posting schedules, and community engagement across platforms relevant to your target markets, ensuring your digital presence supports your commercial objectives."
+      ],
+      "included": [
+        "International brand positioning and messaging",
+        "Brand identity review and development support",
+        "Trade event identification, registration, and representation",
+        "Sales material and presentation preparation",
+        "Digital channel strategy and management",
+        "Social media content creation and scheduling",
+        "Platform management (Instagram, LinkedIn, market-specific channels)",
+        "Campaign performance reporting"
+      ]
+    },
+    "foreign_companies": {
+      "page_title": "Services for Foreign Companies",
+      "page_subtitle": "Market entry support for international brands entering Georgia.",
+      "headline": "Enter the Georgian Market with Expert Guidance",
+      "body": [
+        "Georgia is an increasingly attractive market for international wine, spirits, and beverage brands — a growing middle class, a sophisticated food and drink culture, and a strategic location between Europe and Asia. Navigating it requires local knowledge.",
+        "MCG helps foreign producers and brands understand the Georgian market, identify the right distribution partners, and manage the regulatory and commercial steps required to establish a presence.",
+        "Whether you are exploring initial market entry or ready to activate a distribution agreement, MCG provides the local expertise and commercial support to make it work."
+      ],
+      "included": [
+        "Georgian market overview and opportunity assessment",
+        "Regulatory and import compliance guidance",
+        "Distributor and importer identification and introduction",
+        "Commercial negotiation support",
+        "Brand positioning for the Georgian consumer",
+        "Ongoing local market representation"
+      ]
+    },
+    "additional_services": {
+      "page_title": "Additional Services",
+      "page_subtitle": "Specialist support including training and ISO certification guidance.",
+      "headline": "Specialist Support for Your Business",
+      "body": [
+        "Beyond export, import, and marketing, MCG offers specialist support services designed to strengthen the operational and compliance foundations of wine and spirits businesses.",
+        "These services are available as standalone engagements or as part of a broader advisory relationship. Full service details are in development — contact us to discuss your specific requirements."
+      ],
+      "included": [
+        "Industry and trade training programmes",
+        "ISO certification preparation and support",
+        "Additional specialist services — contact MCG to discuss your requirements"
+      ]
+    }
+  },
+  "about_page": {
+    "heading": "About MCG",
+    "subtitle": "Built on Real Export Experience",
+    "intro": [
+      "Millennium Consulting Georgia was founded by a senior export and marketing professional with over a decade of direct experience at some of Georgia's best-known wineries. That background — building distribution networks, managing international buyer relationships, and executing market entry strategies across more than 15 countries — forms the operational core of what MCG delivers.",
+      "We work as an extension of your commercial team. Rather than advising from the outside, we take direct ownership of export operations, partner relationships, and brand positioning in target markets. Our clients work with a firm that has already done what they are trying to do — and built the network to make it happen again.",
+      "MCG focuses exclusively on wine, spirits, and high-quality beverage products. That narrow focus means our market knowledge, buyer relationships, and regulatory understanding are current, relevant, and deep."
+    ],
+    "what_we_bring_heading": "What We Bring",
+    "cards": [
+      {
+        "title": "Export Networks",
+        "body": "Direct relationships with importers, distributors, and buyers across 15 countries, built over years of active export work from Georgian wineries."
+      },
+      {
+        "title": "Regulatory Know-How",
+        "body": "Hands-on experience navigating export documentation, customs compliance, and market-specific import requirements across European, Asian, and North American markets."
+      },
+      {
+        "title": "Brand Positioning",
+        "body": "A track record of positioning Georgian wine and spirits for international audiences — from trade event representation to digital presence and in-market promotional activity."
+      }
+    ],
+    "cta_heading": "Let's Talk About Your Market",
+    "cta_body": "Tell us where you want to go and what you produce. We'll tell you how to get there.",
+    "cta_button": "Get in Touch"
+  },
+  "contact_page": {
+    "heading": "Get in Touch",
+    "subtitle": "We reply within 24 business hours.",
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Your name",
+      "company_label": "Company",
+      "company_placeholder": "Your company",
+      "email_label": "Email",
+      "email_placeholder": "your@email.com",
+      "message_label": "Message",
+      "message_placeholder": "Tell us about your business and what you're looking for.",
+      "service_label": "Service interest",
+      "service_options": [
+        "New Partner Acquisition",
+        "Existing Partner Management",
+        "Marketing",
+        "Services for Foreign Companies",
+        "Additional Services"
+      ],
+      "submit_label": "Send Message"
+    },
+    "details_heading": "Contact Details",
+    "details": [
+      {
+        "label": "Email",
+        "value": "levan.kurdadze@mcgpartner.com",
+        "href": "mailto:levan.kurdadze@mcgpartner.com"
+      },
+      {
+        "label": "Phone",
+        "value": "+995 555 91 66 44",
+        "href": "tel:+995555916644"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "Millennium Consulting Georgia",
+        "href": "https://www.linkedin.com/company/millennium-consulting-georgia/"
+      },
+      {
+        "label": "Book a Call",
+        "value": "Open calendar →",
+        "href": "book.html"
+      }
+    ]
+  },
+  "markets_page": {
+    "heading": "Our Markets",
+    "subtitle": "An established network spanning Europe, Asia, and North America.",
+    "map_heading": "Partner Network",
+    "countries_heading": "Countries We Operate In",
+    "countries_flat": [
+      "Germany", "Poland", "Netherlands", "United Kingdom", "France",
+      "Czech Republic", "Latvia", "Estonia", "Lithuania", "Ukraine",
+      "China", "Japan", "South Korea", "Kazakhstan",
+      "United States", "Canada"
     ]
   },
   "nav_cta": "Get in Touch",
