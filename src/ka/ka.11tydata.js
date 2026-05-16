@@ -3,6 +3,7 @@ module.exports = {
   lang: "ka",
   navHome: "მთავარი",
   navServices: "სერვისები",
+  navMarkets: "ბაზრები",
   navAbout: "ჩვენს შესახებ",
   navContact: "კონტაქტი",
   bookBtn: "დაჯავშნა",

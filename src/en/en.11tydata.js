@@ -3,6 +3,7 @@ module.exports = {
   lang: "en",
   navHome: "Home",
   navServices: "Services",
+  navMarkets: "Markets",
   navAbout: "About",
   navContact: "Contact",
   bookBtn: "Book now",

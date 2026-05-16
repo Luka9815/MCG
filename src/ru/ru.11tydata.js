@@ -3,6 +3,7 @@ module.exports = {
   lang: "ru",
   navHome: "Главная",
   navServices: "Услуги",
+  navMarkets: "Рынки",
   navAbout: "О нас",
   navContact: "Контакты",
   bookBtn: "Запись",
