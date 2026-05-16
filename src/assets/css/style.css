@@ -174,12 +174,17 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background: var(--brand);
   border-color: var(--brand);
-  color: #fff;
+  color: var(--white);
 }
 
 .btn-primary:hover {
   background: #007faa;
   border-color: #007faa;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
 }
 
 /* ============================================================
@@ -643,6 +648,10 @@ body.home-page .hero > .container {
   margin: 0;
 }
 
+.bring-card:hover {
+  background: var(--light);
+}
+
 /* ============================================================
    Process grid (homepage)
 ============================================================ */
@@ -687,6 +696,10 @@ body.home-page .hero > .container {
   color: var(--text-muted);
   line-height: 1.7;
   margin: 0;
+}
+
+.phase-card:hover {
+  background: var(--light);
 }
 
 /* ============================================================
@@ -748,7 +761,7 @@ body.home-page .hero > .container {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--white);
   margin: 0 0 14px;
 }
 
@@ -763,7 +776,7 @@ body.home-page .hero > .container {
 .cta-band .btn-primary {
   background: var(--dark);
   border-color: var(--dark);
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   padding: 12px 28px;
 }
@@ -819,12 +832,23 @@ body.home-page .hero > .container {
   width: 100%;
   -webkit-appearance: none;
   appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235A7184' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
   border-color: var(--brand);
+}
+
+.form-group input:focus-visible,
+.form-group textarea:focus-visible,
+.form-group select:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 0;
 }
 
 .form-group textarea {
@@ -879,7 +903,7 @@ body.home-page .hero > .container {
   height: 12px;
   border-radius: 50%;
   background: var(--brand);
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   box-shadow: 0 0 8px rgba(0,154,206,.8);
 }
 
@@ -1026,6 +1050,7 @@ body.home-page .hero > .container {
 }
 
 @media (max-width: 640px) {
+  .container { padding: 0 16px; }
   .svc-grid           { grid-template-columns: 1fr; }
   .svc-grid--3        { grid-template-columns: 1fr; }
   .process-grid       { grid-template-columns: 1fr; }
