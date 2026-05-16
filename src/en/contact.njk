@@ -2,16 +2,62 @@
 title: Contact — Millennium Consulting Georgia
 pageRelPath: contact.html
 ---
-<div class="page-title"><div class="container">
-  <h1>Contact</h1>
-  <p>Reach out — we reply within 24 business hours.</p>
-</div></div>
-
-<section class="section"><div class="container">
-  <div class="contact-grid">
-    <div class="card contact-item"><small>Email</small><br><a href="mailto:levan.kurdadze@mcgpartner.com">levan.kurdadze@mcgpartner.com</a></div>
-    <div class="card contact-item"><small>Phone</small><br><a href="tel:+995555916644">+995 555 91 66 44</a></div>
-    <div class="card contact-item"><small>LinkedIn</small><br><a target="_blank" rel="noopener" href="https://www.linkedin.com/company/millennium-consulting-georgia/">Millennium Consulting Georgia</a></div>
-    <div class="card contact-item"><small>Booking</small><br><a href="book.html">Open calendar →</a></div>
+<div class="page-hero">
+  <div class="container">
+    <h1>{{ en.contact_page.heading }}</h1>
+    <p>{{ en.contact_page.subtitle }}</p>
   </div>
-</div></section>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <form class="contact-form" method="POST" action="">
+        {# Wire action to Formspree/Netlify Forms when ready #}
+        <div class="form-group">
+          <label for="cf-name">{{ en.contact_page.form.name_label }} *</label>
+          <input id="cf-name" type="text" name="name" placeholder="{{ en.contact_page.form.name_placeholder }}" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-company">{{ en.contact_page.form.company_label }}</label>
+          <input id="cf-company" type="text" name="company" placeholder="{{ en.contact_page.form.company_placeholder }}">
+        </div>
+        <div class="form-group">
+          <label for="cf-email">{{ en.contact_page.form.email_label }} *</label>
+          <input id="cf-email" type="email" name="email" placeholder="{{ en.contact_page.form.email_placeholder }}" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-service">{{ en.contact_page.form.service_label }}</label>
+          <select id="cf-service" name="service">
+            <option value="" disabled selected>— Select a service —</option>
+            {% for opt in en.contact_page.form.service_options %}
+            <option value="{{ opt }}">{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cf-message">{{ en.contact_page.form.message_label }} *</label>
+          <textarea id="cf-message" name="message" placeholder="{{ en.contact_page.form.message_placeholder }}" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">{{ en.contact_page.form.submit_label }}</button>
+        </div>
+      </form>
+
+      <div>
+        <h2 class="section-heading" style="margin-bottom:0;">{{ en.contact_page.details_heading }}</h2>
+        <div class="section-rule"></div>
+        <div class="contact-details-block">
+          {% for item in en.contact_page.details %}
+          <div class="contact-detail-item">
+            <span class="detail-label">{{ item.label }}</span>
+            <a href="{{ item.href }}"{% if "http" in item.href %} target="_blank" rel="noopener"{% endif %}>{{ item.value }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
