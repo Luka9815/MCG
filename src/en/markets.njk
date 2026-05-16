@@ -1,0 +1,47 @@
+---
+title: Markets — Millennium Consulting Georgia
+pageRelPath: markets.html
+---
+<div class="page-hero">
+  <div class="container">
+    <h1>{{ en.markets_page.heading }}</h1>
+    <p>{{ en.markets_page.subtitle }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">{{ en.markets_page.map_heading }}</h2>
+    <div class="section-rule"></div>
+    <div id="mcg-map"></div>
+    <script>
+    (function(){
+      var countries = {{ en.markets.countries | dump | safe }};
+      var map = L.map('mcg-map', { scrollWheelZoom: false, zoomControl: true }).setView([40, 30], 2);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+        maxZoom: 19
+      }).addTo(map);
+      var dotIcon = L.divIcon({
+        className: 'mcg-marker',
+        html: '<div class="mcg-marker-dot"></div>',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8],
+        popupAnchor: [0, -12]
+      });
+      countries.forEach(function(c){
+        var popup = '<strong>' + c.name + '</strong>' + (c.note ? '<br><span>' + c.note + '</span>' : '');
+        L.marker([c.lat, c.lng], { icon: dotIcon }).addTo(map).bindPopup(popup);
+      });
+    })();
+    </script>
+
+    <h2 class="section-heading" style="margin-top:40px;">{{ en.markets_page.countries_heading }}</h2>
+    <div class="section-rule"></div>
+    <div class="markets-grid">
+      {% for country in en.markets_page.countries_flat %}
+      <span class="country-tag country-tag--light">{{ country }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
