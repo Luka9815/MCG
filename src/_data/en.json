@@ -131,7 +131,11 @@
       "eyebrow": "MARKETS OPENED",
       "heading": "Relationships across Europe, Asia and North America.",
       "sub": "Markets Levan has entered and built over his career, spanning producers, distributors and buyers.",
-      "tags": ["Ukraine","Lithuania","Latvia","Estonia","Turkey","China","France","Hungary","Poland","UAE","Belarus","USA","Hong Kong","Canada","Japan","Azerbaijan"]
+      "groups": [
+        { "region": "Europe",            "tags": ["Ukraine","Lithuania","Latvia","Estonia","Poland","Hungary","France","Belarus"] },
+        { "region": "Asia & Middle East","tags": ["China","Japan","Hong Kong","UAE","Turkey","Azerbaijan"] },
+        { "region": "North America",     "tags": ["USA","Canada"] }
+      ]
     },
     "credentials": {
       "heading": "Credentials",

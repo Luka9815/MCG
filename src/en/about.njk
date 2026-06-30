@@ -82,9 +82,16 @@ bodyClass: about-page
     <span class="about-eyebrow">{{ en.aboutPage.markets.eyebrow }}</span>
     <h2 class="about-markets-h2">{{ en.aboutPage.markets.heading }}</h2>
     <p class="about-markets-sub">{{ en.aboutPage.markets.sub }}</p>
-    <div class="about-tags">
-      {% for tag in en.aboutPage.markets.tags %}
-      <span class="about-tag">{{ tag }}</span>
+    <div class="about-mk-groups">
+      {% for group in en.aboutPage.markets.groups %}
+      <div class="about-mk-group">
+        <div class="about-mk-label">{{ group.region }}</div>
+        <div class="about-mk-pills">
+          {% for tag in group.tags %}
+          <span class="about-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
       {% endfor %}
     </div>
   </div>
