@@ -4,20 +4,19 @@
     "description": "MCG connects Georgian wine and spirits producers to international markets through expert export management, import sourcing, and brand marketing."
   },
   "hero": {
-    "headline": "Georgian Wine & Spirits,\nConnected to the World",
-    "subtext": "MCG is a Tbilisi-based trade and marketing consultancy. Our founding team brings over [X] years of combined export and marketing experience from Georgia's leading wineries.",
+    "headline": "Wine, spirits, and a proven route to market.",
+    "subtext": "MCG is led by Levan Kurdadze, an international trade consultant with 10+ years and 31 partnerships secured across 16 markets. We help producers enter and grow in export markets, from first strategy to active sales.",
     "cta_primary": "Our Services",
     "cta_secondary": "How We Work"
   },
   "stats": [
-    { "value": "[X]+", "label": "Years Combined Experience" },
-    { "value": "15+", "label": "Markets Served" },
-    { "value": "[X]+", "label": "Brands Represented" },
-    { "value": "[X]+", "label": "Export Partnerships" }
+    { "value": "10+", "label": "Years in international trade" },
+    { "value": "31", "label": "Partnerships secured" },
+    { "value": "16", "label": "Export markets" }
   ],
   "services": {
     "heading": "What We Do",
-    "subheading": "End-to-end trade and marketing support for Georgian producers entering international markets.",
+    "subheading": "End-to-end trade and marketing support, led by someone who has done it at scale. From export operations to brand positioning, MCG works as an extension of your team.",
     "cards": [
       {
         "title": "Export Operations",
@@ -25,7 +24,7 @@
       },
       {
         "title": "Import & Sourcing",
-        "description": "Strategic sourcing and import facilitation for international spirits, wines, and beverage brands entering the Georgian market."
+        "description": "Strategic sourcing and in-market representation for international companies entering Georgia. Levan has represented a US manufacturer end to end, from market research and partner identification through to signed distribution."
       },
       {
         "title": "Brand & Marketing",
@@ -38,8 +37,8 @@
     ]
   },
   "about": {
-    "heading": "Built on Real Export Experience",
-    "body": "MCG was founded by former export and marketing managers from major Georgian wineries. The team brings an established network spanning 15 countries, direct relationships with distributors and buyers, and a track record of taking Georgian wine and spirits into new markets. We work as an extension of your team — handling the complexity of international trade so you can focus on what you produce.",
+    "heading": "Led by Levan Kurdadze",
+    "body": "Levan Kurdadze is an international trade and export-import consultant with over ten years driving market entry for Georgian producers. As Export Manager and Partner Relations Development Manager at Tbilvino, one of Georgia's leading wineries, he attracted 24 new partner companies across 16 countries and generated over 7 million GEL in export revenue (33% net profit), opening markets including Ukraine, the Baltics, Turkey, China, France, Poland, the UAE, the USA, and Japan. In 2025, the UN Food and Agriculture Organization (FAO) appointed him National Trade and Marketing Consultant to lead a value-chain analysis and export-diversification strategy for Georgia's wine sector. He has represented producers at 15+ international trade fairs, including Vinexpo Paris, Prowein Shanghai, CIIE Shanghai, FOODEX Tokyo, and IWSE Seoul. He holds dual master's degrees in International Business Management (Georgia and Spain) and is a Certified Export Manager (Enterprise Georgia), fluent in English and Russian.",
     "cta": "About MCG"
   },
   "process": {
