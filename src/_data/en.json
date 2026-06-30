@@ -159,5 +159,125 @@
       "sub": "Tell us where you want to go. We'll tell you how to get there.",
       "button": "Start the Conversation"
     }
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "What We Do",
+      "h1": "Four ways across a border.",
+      "lead": "MCG moves products, and the brands behind them, between markets. Two directions out (taking producers into new markets, sourcing for buyers who want them) and two directions in (positioning a product for a market it wasn't built for, and representing foreign brands here). Every engagement is led personally by Levan Kurdadze.",
+      "attr": "Every figure below is <b>Levan Kurdadze's own career record</b>, not MCG company history.",
+      "hint": "Select a service to expand"
+    },
+    "services": [
+      {
+        "eyebrow": "Outbound",
+        "title": "Export & market entry",
+        "summary": "Taking a product into a market that doesn't know it yet, from strategy to a signed distributor.",
+        "chip": { "n": "24", "nSup": "", "c": "partners · 16 countries" },
+        "open": true,
+        "reverse": false,
+        "detail": {
+          "intro": "Not remote brokering. On-the-ground export management in China, South Korea, Japan, Turkey, Hungary, and the UAE, with markets opened across three continents.",
+          "blocks": [
+            {
+              "heading": "Markets opened firsthand",
+              "pills": ["Ukraine","Lithuania","Latvia","Estonia","Poland","Hungary","France","Belarus","China","Japan","Hong Kong","UAE","Turkey","Azerbaijan","USA","Canada"]
+            },
+            {
+              "heading": "How an engagement runs",
+              "steps": ["Market assessment and entry strategy","Partner shortlisting and vetting","Pricing, terms, and negotiation","Signed distribution and handover"]
+            }
+          ]
+        },
+        "proof": {
+          "text": "Built and ran the export function at Tbilvino: 24 new partner companies across 16 countries, 7M+ GEL export revenue at 33% net profit.",
+          "sourceName": "Tbilvino",
+          "sourceDetail": "Export Manager, 2019–2024"
+        }
+      },
+      {
+        "eyebrow": "Sourcing",
+        "title": "Wine & spirits sourcing",
+        "summary": "Direct, vetted access to producers worth representing, for buyers and importers.",
+        "chip": { "n": "15", "nSup": "+", "c": "trade fairs worked" },
+        "open": false,
+        "reverse": true,
+        "detail": {
+          "intro": "Buyer-side access built from a decade on both sides of the table. Introductions are vetted before they reach you, with samples and terms handled on the ground.",
+          "blocks": [
+            {
+              "heading": "Trade fairs worked",
+              "pills": ["Vinexpo Paris","Prowein Shanghai","CIIE Shanghai","FOODEX Tokyo","IWSE Seoul","and others"]
+            },
+            {
+              "heading": "What sourcing covers",
+              "steps": ["Brief and category definition","Producer vetting and shortlist","Samples and tasting coordination","Introductions and terms"]
+            }
+          ]
+        },
+        "proof": {
+          "text": "15+ international trade fairs worked, backed by on-the-ground export experience across China, South Korea, Japan, Turkey, and the UAE.",
+          "sourceName": "Trade-fair circuit",
+          "sourceDetail": "10+ years international trade"
+        }
+      },
+      {
+        "eyebrow": "Positioning",
+        "title": "Marketing & brand development",
+        "summary": "Repositioning a product for a market it wasn't built for.",
+        "chip": { "n": "FAO", "nSup": "", "c": "consultant, 2025" },
+        "open": false,
+        "reverse": false,
+        "detail": {
+          "intro": "A product built for one market rarely lands in another unchanged. The work spans repositioning, packaging, and the line extensions that make a brand make sense to a first-time buyer.",
+          "blocks": [
+            {
+              "heading": "Done in practice",
+              "pills": ["Bag-in-Box line built from scratch (Tbilvino)","FAO wine-sector value-chain analysis","Export-diversification strategy (Georgia)"]
+            },
+            {
+              "heading": "What brand work covers",
+              "steps": ["Positioning for the target market","Packaging and format development","Channel and pricing strategy","Export diversification"]
+            }
+          ]
+        },
+        "proof": {
+          "text": "National Trade & Marketing Consultant for the FAO (2025), leading value-chain analysis and export-diversification strategy for Georgia's wine sector.",
+          "sourceName": "FAO",
+          "sourceDetail": "institutional strategy & product development"
+        }
+      },
+      {
+        "eyebrow": "Inbound",
+        "title": "Import & representation",
+        "summary": "Local representation for foreign brands entering Georgia and the region.",
+        "chip": { "n": "Full", "nSup": "", "c": "cycle, research to signed" },
+        "open": false,
+        "reverse": true,
+        "detail": {
+          "intro": "The same method works in reverse. Foreign brands entering Georgia and the wider region get local representation that runs the full cycle, and it isn't wine-only.",
+          "blocks": [
+            {
+              "heading": "A completed engagement",
+              "steps": ["Market research: size, channels, competition","Partner identification and shortlist","Negotiation","Signed distribution agreement"]
+            },
+            {
+              "heading": "What representation covers",
+              "pills": ["Local market intelligence","Partner identification","Regulatory & import navigation","Ongoing representation"]
+            }
+          ]
+        },
+        "proof": {
+          "text": "Georgia representative for a US (California) manufacturer, carrying the engagement end to end, from market research to a closed distribution agreement.",
+          "sourceName": "Inbound representation",
+          "sourceDetail": "US manufacturer"
+        }
+      }
+    ],
+    "cta": {
+      "heading": "Not sure which one you need?",
+      "lead": "Tell us what you're trying to move, and where. We'll map the route.",
+      "button": "Start the Conversation"
+    }
   }
 }

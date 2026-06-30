@@ -1,31 +1,99 @@
 ---
-title: Services - Millennium Consulting Georgia
+title: Services — Millennium Consulting Georgia
 pageRelPath: services.html
+bodyClass: services-page
 ---
-<div class="page-title"><div class="container">
-  <h1>Services</h1>
-  <p>Select a service to view details.</p>
-</div></div>
 
-<section class="section"><div class="container">
-  <div class="svc-grid">
-    <a class="svc-card" href="services/new-partner-acquisition.html">
-      <h3>New Partner Acquisition</h3>
-    </a>
-    <a class="svc-card" href="services/existing-partner-management.html">
-      <h3>Existing Partner Management</h3>
-    </a>
-    <a class="svc-card" href="services/marketing-services.html">
-      <h3>Marketing Services</h3>
-    </a>
-    <a class="svc-card" href="services/foreign-companies.html">
-      <h3>Services for Foreign Companies</h3>
-    </a>
-    <a class="svc-card" href="services/social-media-marketing.html">
-      <h3>Social Media Marketing</h3>
-    </a>
-    <a class="svc-card" href="services/additional-services.html">
-      <h3>Additional Services</h3>
-    </a>
+<div class="about-bg-art" aria-hidden="true">
+  <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="sg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#009ACE" stop-opacity="0.16"/><stop offset="100%" stop-color="#009ACE" stop-opacity="0"/></radialGradient>
+      <radialGradient id="sg2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#009ACE" stop-opacity="0.10"/><stop offset="100%" stop-color="#009ACE" stop-opacity="0"/></radialGradient>
+    </defs>
+    <circle cx="180" cy="160" r="320" fill="url(#sg1)"/>
+    <circle cx="1040" cy="660" r="380" fill="url(#sg2)"/>
+    <g stroke="#009ACE" stroke-width="1" fill="none" stroke-dasharray="5 9" stroke-opacity="0.5">
+      <path d="M120 240 C 360 120, 720 360, 1080 200"/>
+      <path d="M80 560 C 420 660, 760 420, 1120 600"/>
+      <path d="M200 420 C 500 380, 760 520, 1060 440"/>
+    </g>
+    <g fill="#009ACE" fill-opacity="0.7">
+      <circle cx="120" cy="240" r="3.5"/>
+      <circle cx="1080" cy="200" r="3.5"/>
+      <circle cx="80" cy="560" r="3.5"/>
+      <circle cx="1120" cy="600" r="3.5"/>
+      <circle cx="500" cy="380" r="2.5"/>
+      <circle cx="760" cy="520" r="2.5"/>
+    </g>
+  </svg>
+</div>
+
+<section class="svc-intro">
+  <div class="container">
+    <p class="eyebrow">{{ en.servicesPage.hero.eyebrow }}</p>
+    <h1>{{ en.servicesPage.hero.h1 }}</h1>
+    <p class="lead">{{ en.servicesPage.hero.lead }}</p>
+    <div class="svc-attr"><i>&#9679;</i><span>{{ en.servicesPage.hero.attr | safe }}</span></div>
   </div>
-</div></section>
+</section>
+
+<section class="svc-rows">
+  <div class="container">
+    <p style="font-size:12px;letter-spacing:.04em;color:var(--muted);margin:0 0 6px;">{{ en.servicesPage.hero.hint }} &darr;</p>
+
+    {% for svc in en.servicesPage.services %}
+    <details class="svc-item{% if svc.reverse %} reverse{% endif %}"{% if svc.open %} open{% endif %}>
+      <summary class="svc-head">
+        <div class="svc-h-copy">
+          <p class="svc-h-eyebrow">{{ svc.eyebrow }}</p>
+          <h2 class="svc-h-title">{{ svc.title }}</h2>
+          <p class="svc-h-sum">{{ svc.summary }}</p>
+        </div>
+        <div class="svc-h-right">
+          <div class="svc-chip">
+            <div class="n">{{ svc.chip.n }}{% if svc.chip.nSup %}<small>{{ svc.chip.nSup }}</small>{% endif %}</div>
+            <div class="c">{{ svc.chip.c }}</div>
+          </div>
+          <span class="svc-toggle" aria-hidden="true"></span>
+        </div>
+      </summary>
+      <div class="svc-body">
+        <div class="svc-grid2">
+          <div class="svc-detail">
+            <p>{{ svc.detail.intro }}</p>
+            {% for block in svc.detail.blocks %}
+            <div class="svc-block">
+              <h4>{{ block.heading }}</h4>
+              {% if block.pills %}
+              <div class="svc-pills">
+                {% for pill in block.pills %}<span>{{ pill }}</span>{% endfor %}
+              </div>
+              {% endif %}
+              {% if block.steps %}
+              <ol class="svc-steps">
+                {% for step in block.steps %}<li>{{ step }}</li>{% endfor %}
+              </ol>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          <div class="svc-proof">
+            <span class="svc-proof-label">Track record</span>
+            <p>{{ svc.proof.text }}</p>
+            <div class="svc-proof-src"><b>{{ svc.proof.sourceName }}</b> &nbsp;&middot;&nbsp; {{ svc.proof.sourceDetail }}</div>
+          </div>
+        </div>
+      </div>
+    </details>
+    {% endfor %}
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>{{ en.servicesPage.cta.heading }}</h2>
+    <p>{{ en.servicesPage.cta.lead }}</p>
+    <a class="btn btn-primary" href="contact.html">{{ en.servicesPage.cta.button }}</a>
+  </div>
+</section>
