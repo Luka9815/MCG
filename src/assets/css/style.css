@@ -1184,11 +1184,15 @@ body.home-page .h1{
   .about-pr-grid{grid-template-columns:300px 1fr;}
 }
 .about-portrait{
-  position:relative;
   margin:0;
+}
+.portrait-media{
+  position:relative;
 }
 .about-portrait img{
   width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
   border-radius:4px;
   display:block;
   filter:contrast(1.02) saturate(1.03);
