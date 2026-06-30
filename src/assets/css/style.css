@@ -1440,9 +1440,6 @@ body.home-page .h1{
 .svc-intro .eyebrow{ font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--brand); font-weight:600; margin:0 0 14px; }
 .svc-intro h1{ font-family:var(--ff-display); font-weight:300; font-size:clamp(38px,5.4vw,60px); line-height:1.02; letter-spacing:-.4px; margin:0; color:var(--text); }
 .svc-intro .lead{ margin-top:18px; max-width:60ch; }
-.svc-attr{ display:inline-flex; align-items:center; gap:10px; margin-top:22px; padding:9px 14px; border:1px solid var(--border); border-radius:999px; background:rgba(0,154,206,.05); font-size:12px; color:var(--muted); }
-.svc-attr b{ color:var(--text); font-weight:600; }
-.svc-attr i{ font-style:normal; color:var(--brand); }
 
 .svc-rows{ position:relative; z-index:1; padding:30px 0 10px; }
 
