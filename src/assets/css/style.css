@@ -1097,6 +1097,287 @@ body.home-page .h1{
   box-shadow: 0 0 8px rgba(0,154,206,0.8), 0 0 2px rgba(0,154,206,1);
 }
 
+/* =========================
+   About page
+========================= */
+
+/* Ambient background art */
+.about-bg-art{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  overflow:hidden;
+}
+.about-glow{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(90px);
+}
+.about-glow-1{
+  width:520px;height:520px;
+  background:rgba(0,154,206,.13);
+  top:-160px;right:-120px;
+}
+.about-glow-2{
+  width:460px;height:460px;
+  background:rgba(0,154,206,.07);
+  bottom:8%;left:-160px;
+}
+.about-bg-art svg{
+  position:absolute;
+  inset:0;
+  width:100%;height:100%;
+  opacity:.38;
+}
+/* Ensure about-page content sits above fixed bg */
+.about-page main{position:relative;z-index:1;}
+
+/* Shared eyebrow label */
+.about-eyebrow{
+  display:inline-block;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--brand);
+  margin-bottom:18px;
+}
+
+/* Hero */
+.about-hero{
+  padding:clamp(60px,10vw,120px) 0 clamp(40px,6vw,76px);
+}
+.about-h1{
+  font-family:var(--ff-display);
+  font-size:clamp(36px,6vw,72px);
+  font-weight:400;
+  line-height:1.05;
+  color:var(--text);
+  max-width:16ch;
+  margin:0 0 24px;
+}
+.about-h1 em{
+  font-style:italic;
+  color:var(--brand);
+}
+.about-lead{
+  font-size:clamp(15px,1.6vw,18px);
+  color:var(--muted);
+  max-width:62ch;
+  margin:0;
+  line-height:1.7;
+}
+
+/* Principal */
+.about-principal{
+  padding:clamp(40px,6vw,72px) 0;
+  border-top:1px solid var(--border);
+}
+.about-pr-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(32px,5vw,60px);
+  align-items:start;
+}
+@media(min-width:860px){
+  .about-pr-grid{grid-template-columns:300px 1fr;}
+}
+.about-portrait{
+  position:relative;
+  margin:0;
+}
+.about-portrait img{
+  width:100%;
+  border-radius:4px;
+  display:block;
+  filter:contrast(1.02) saturate(1.03);
+}
+.about-portrait-frame{
+  position:absolute;
+  inset:0;
+  border:1px solid var(--brand);
+  border-radius:4px;
+  transform:translate(12px,12px);
+  z-index:-1;
+  opacity:.5;
+}
+.about-portrait figcaption{margin-top:16px;}
+.about-portrait-name{
+  font-family:var(--ff-display);
+  font-size:22px;
+  color:var(--text);
+  font-weight:600;
+}
+.about-portrait-role{
+  font-size:11px;
+  letter-spacing:.1em;
+  color:var(--brand);
+  text-transform:uppercase;
+  font-weight:600;
+  margin-top:4px;
+}
+.about-pr-body h2{
+  font-family:var(--ff-display);
+  font-size:clamp(26px,3.5vw,42px);
+  font-weight:400;
+  color:var(--text);
+  margin:0 0 20px;
+  line-height:1.1;
+}
+.about-pr-body p{
+  color:var(--muted);
+  margin:0 0 18px;
+  line-height:1.65;
+}
+.about-pr-body p:last-child{margin-bottom:0;}
+.about-pr-body strong{color:var(--text);font-weight:600;}
+
+/* Track record */
+.about-record{
+  background:#1a2535;
+  border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  padding:clamp(44px,6vw,76px) 0;
+  position:relative;
+  z-index:1;
+}
+.about-record-head{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 20px;
+  align-items:baseline;
+  margin-bottom:clamp(26px,3.5vw,42px);
+}
+.about-record-head h2{
+  font-family:var(--ff-display);
+  font-size:clamp(24px,3vw,36px);
+  font-weight:400;
+  color:var(--text);
+  margin:0;
+  line-height:1.1;
+}
+.about-record-note{
+  font-size:13px;
+  color:var(--muted);
+  max-width:44ch;
+}
+.about-stats-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:4px;
+  overflow:hidden;
+}
+.about-stat{
+  flex:1 1 160px;
+  padding:28px 18px;
+  text-align:center;
+  border-right:1px solid rgba(255,255,255,.08);
+}
+.about-stat:last-child{border-right:0;}
+@media(max-width:700px){
+  .about-stat{flex-basis:130px;border-bottom:1px solid rgba(255,255,255,.08);}
+}
+.about-stat-n{
+  font-family:var(--ff-display);
+  font-size:clamp(34px,4vw,50px);
+  color:var(--text);
+  line-height:1;
+  font-weight:400;
+}
+.about-stat-c{
+  margin-top:10px;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* Markets */
+.about-markets{
+  padding:clamp(48px,7vw,84px) 0;
+}
+.about-markets-h2{
+  font-family:var(--ff-display);
+  font-size:clamp(24px,3.2vw,38px);
+  font-weight:400;
+  color:var(--text);
+  margin:14px 0 0;
+  max-width:22ch;
+  line-height:1.1;
+}
+.about-markets-sub{
+  margin:14px 0 0;
+  color:var(--muted);
+  max-width:54ch;
+}
+.about-tags{
+  margin-top:26px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.about-tag{
+  font-size:13px;
+  letter-spacing:.02em;
+  color:var(--text);
+  border:1px solid var(--border);
+  border-radius:30px;
+  padding:7px 15px;
+  background:rgba(0,154,206,.04);
+  opacity:.85;
+}
+
+/* Credentials */
+.about-creds{
+  background:rgba(255,255,255,.018);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:clamp(44px,6vw,76px) 0;
+}
+.about-creds-h2{
+  font-family:var(--ff-display);
+  font-size:clamp(24px,3vw,36px);
+  font-weight:400;
+  color:var(--text);
+  margin:0 0 clamp(22px,3.5vw,38px);
+  line-height:1.1;
+}
+.about-creds-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:28px;
+}
+@media(min-width:720px){
+  .about-creds-grid{grid-template-columns:repeat(2,1fr);}
+}
+.about-cblock .about-eyebrow{display:block;margin-bottom:14px;}
+.about-cblock p{
+  margin:0 0 12px;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.55;
+}
+.about-cblock p:last-child{margin-bottom:0;}
+.about-cblock strong{color:var(--text);font-weight:600;}
+.about-creds-note{
+  margin:clamp(22px,3.5vw,34px) 0 0;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+  font-size:14px;
+  color:var(--muted);
+}
+.about-creds-note strong{
+  color:var(--brand);
+  font-weight:600;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  font-size:11px;
+  margin-right:10px;
+}
+
 /* Leaflet popup overrides */
 .leaflet-popup-content-wrapper {
   background: #1a2d42 !important;

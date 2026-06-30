@@ -101,5 +101,59 @@
     "email": "[email@mcg.ge]",
     "phone": "[+995 XXX XXX XXX]",
     "copyright": "MCG. All rights reserved."
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "ABOUT MCG",
+      "headline": "Market entry, run by someone who has <em>done it before.</em>",
+      "lead": "Millennium Consulting Georgia (MCG) is an international trade and marketing consultancy led by Levan Kurdadze. We help producers enter and grow in export markets, and help international partners source quality Georgian products with confidence, handling the complexity of cross-border trade so you can focus on what you make."
+    },
+    "principal": {
+      "name": "Levan Kurdadze",
+      "role": "Principal & Trade Consultant",
+      "heading": "Led by Levan Kurdadze",
+      "p1": "Levan is an international trade and export-import consultant with over ten years driving market entry for Georgian producers. As Export Manager and Partner Relations Development Manager at Tbilvino, one of Georgia's leading wineries, he opened markets across Europe, Asia and North America, attracting 24 new partner companies across 16 countries and generating over 7 million GEL in export revenue at 33% net profit. He worked on the ground as export manager in China, South Korea, Japan, Turkey, Hungary and the UAE.",
+      "p2": "His work goes beyond placing existing products. At Tbilvino he led product development, including building a Bag-in-Box line from scratch, and he has represented producers at <strong>15+ international trade fairs</strong>, among them Vinexpo Paris, Prowein Shanghai, CIIE Shanghai, FOODEX Tokyo and IWSE Seoul.",
+      "p3": "In 2025, the <strong>UN Food and Agriculture Organization (FAO)</strong> appointed him National Trade and Marketing Consultant to lead a value-chain analysis and export-diversification strategy for Georgia's wine sector, institutional recognition of his expertise. He has also handled inbound representation, acting as the Georgia representative for a California-based manufacturer and running the process from market research and partner identification through to signed distribution."
+    },
+    "record": {
+      "heading": "A record built in the field",
+      "note": "Figures reflect Levan's career in international trade, including his tenure at Tbilvino.",
+      "stats": [
+        { "value": "10+", "label": "Years in trade" },
+        { "value": "31",  "label": "Partnerships secured" },
+        { "value": "16",  "label": "Export markets" },
+        { "value": "7M+", "label": "GEL revenue generated" },
+        { "value": "15+", "label": "International trade fairs" }
+      ]
+    },
+    "markets": {
+      "eyebrow": "MARKETS OPENED",
+      "heading": "Relationships across Europe, Asia and North America.",
+      "sub": "Markets Levan has entered and built over his career, spanning producers, distributors and buyers.",
+      "tags": ["Ukraine","Lithuania","Latvia","Estonia","Turkey","China","France","Hungary","Poland","UAE","Belarus","USA","Hong Kong","Canada","Japan","Azerbaijan"]
+    },
+    "credentials": {
+      "heading": "Credentials",
+      "education": {
+        "label": "Education",
+        "items": [
+          { "degree": "MSc, International Business Management", "institution": "Caucasus International University, Georgia & Universidad de Alcalá, Spain" },
+          { "degree": "BBA, Business Administration", "institution": "University of Łódź, Poland & Caucasus International University" }
+        ]
+      },
+      "certification": {
+        "label": "Certification",
+        "items": [
+          { "degree": "Certified Export Manager", "institution": "Enterprise Georgia" }
+        ]
+      },
+      "languages": "Native Georgian, fluent English and Russian (C2)"
+    },
+    "cta": {
+      "heading": "Ready to enter new markets?",
+      "sub": "Tell us where you want to go. We'll tell you how to get there.",
+      "button": "Start the Conversation"
+    }
   }
 }

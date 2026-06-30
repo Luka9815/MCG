@@ -1,17 +1,120 @@
 ---
 title: About — Millennium Consulting Georgia
 pageRelPath: about.html
+bodyClass: about-page
 ---
-<div class="page-title"><div class="container">
-  <h1>About</h1>
-  <p>Specialized consulting for wine &amp; spirits export.</p>
-</div></div>
 
-<section class="section"><div class="container">
-  <div class="card">
-    <p style="margin:0;color:rgba(245,247,250,.84)">
-      Millennium Consulting Georgia helps producers sell internationally and helps global partners source high-quality Georgian products with confidence.
-      We combine compliance guidance, commercial support, and practical execution across the export process.
-    </p>
+<div class="about-bg-art" aria-hidden="true">
+  <span class="about-glow about-glow-1"></span>
+  <span class="about-glow about-glow-2"></span>
+  <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" fill="none">
+    <g stroke="#009ACE" stroke-width="1" stroke-dasharray="2 7" opacity="0.45">
+      <path d="M120,760 C420,540 760,640 1040,360 C1180,220 1300,180 1400,120"/>
+      <path d="M60,300 C360,360 560,180 900,300 C1140,400 1280,360 1460,520"/>
+      <path d="M200,860 C520,720 820,820 1120,620 C1280,510 1360,520 1480,420"/>
+    </g>
+    <g fill="#009ACE" opacity="0.65">
+      <circle cx="120" cy="760" r="3"/>
+      <circle cx="1040" cy="360" r="3"/>
+      <circle cx="1400" cy="120" r="3"/>
+      <circle cx="60" cy="300" r="3"/>
+      <circle cx="900" cy="300" r="3"/>
+      <circle cx="1460" cy="520" r="3"/>
+      <circle cx="1120" cy="620" r="3"/>
+    </g>
+  </svg>
+</div>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="container">
+    <span class="about-eyebrow">{{ en.aboutPage.hero.eyebrow }}</span>
+    <h1 class="about-h1">{{ en.aboutPage.hero.headline | safe }}</h1>
+    <p class="about-lead">{{ en.aboutPage.hero.lead }}</p>
   </div>
-</div></section>
+</section>
+
+<!-- PRINCIPAL -->
+<section class="about-principal">
+  <div class="container">
+    <div class="about-pr-grid">
+      <figure class="about-portrait">
+        <div class="about-portrait-frame"></div>
+        <img src="../assets/img/levan.jpg" alt="Levan Kurdadze — Principal, Millennium Consulting Georgia">
+        <figcaption>
+          <div class="about-portrait-name">{{ en.aboutPage.principal.name }}</div>
+          <div class="about-portrait-role">{{ en.aboutPage.principal.role }}</div>
+        </figcaption>
+      </figure>
+      <div class="about-pr-body">
+        <h2>{{ en.aboutPage.principal.heading }}</h2>
+        <p>{{ en.aboutPage.principal.p1 }}</p>
+        <p>{{ en.aboutPage.principal.p2 | safe }}</p>
+        <p>{{ en.aboutPage.principal.p3 | safe }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD -->
+<section class="about-record">
+  <div class="container">
+    <div class="about-record-head">
+      <h2>{{ en.aboutPage.record.heading }}</h2>
+      <span class="about-record-note">{{ en.aboutPage.record.note }}</span>
+    </div>
+    <div class="about-stats-row">
+      {% for stat in en.aboutPage.record.stats %}
+      <div class="about-stat">
+        <div class="about-stat-n">{{ stat.value }}</div>
+        <div class="about-stat-c">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS -->
+<section class="about-markets">
+  <div class="container">
+    <span class="about-eyebrow">{{ en.aboutPage.markets.eyebrow }}</span>
+    <h2 class="about-markets-h2">{{ en.aboutPage.markets.heading }}</h2>
+    <p class="about-markets-sub">{{ en.aboutPage.markets.sub }}</p>
+    <div class="about-tags">
+      {% for tag in en.aboutPage.markets.tags %}
+      <span class="about-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="about-creds">
+  <div class="container">
+    <h2 class="about-creds-h2">{{ en.aboutPage.credentials.heading }}</h2>
+    <div class="about-creds-grid">
+      <div class="about-cblock">
+        <span class="about-eyebrow">{{ en.aboutPage.credentials.education.label }}</span>
+        {% for item in en.aboutPage.credentials.education.items %}
+        <p><strong>{{ item.degree }}</strong><br>{{ item.institution }}</p>
+        {% endfor %}
+      </div>
+      <div class="about-cblock">
+        <span class="about-eyebrow">{{ en.aboutPage.credentials.certification.label }}</span>
+        {% for item in en.aboutPage.credentials.certification.items %}
+        <p><strong>{{ item.degree }}</strong><br>{{ item.institution }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    <p class="about-creds-note"><strong>Languages</strong> {{ en.aboutPage.credentials.languages }}</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>{{ en.aboutPage.cta.heading }}</h2>
+    <p>{{ en.aboutPage.cta.sub }}</p>
+    <a class="btn btn-primary" href="contact.html">{{ en.aboutPage.cta.button }}</a>
+  </div>
+</section>
