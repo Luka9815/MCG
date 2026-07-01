@@ -26,27 +26,43 @@ metaDesc: Get in touch with Millennium Consulting Georgia for export, import, so
 
 <section class="contact-hero">
   <div class="container">
-    <span class="about-eyebrow">{{ en.contactPage.hero.eyebrow }}</span>
-    <h1 class="contact-h1">{{ en.contactPage.hero.heading }}</h1>
-    <p class="contact-lead">{{ en.contactPage.hero.lead }}</p>
+    <div class="contact-hero-grid">
 
-    <div class="contact-cta-row">
-      <a class="btn btn-primary" href="{{ en.contactPage.hero.cta_email_href }}">{{ en.contactPage.hero.cta_email }}</a>
-      <a class="btn" href="#book">{{ en.contactPage.hero.cta_book }}</a>
-      <a class="btn" href="{{ en.contactPage.hero.cta_linkedin_href }}" target="_blank" rel="noopener">{{ en.contactPage.hero.cta_linkedin }}</a>
-    </div>
+      <div class="contact-hero-main">
+        <span class="about-eyebrow">{{ en.contactPage.hero.eyebrow }}</span>
+        <h1 class="contact-h1">{{ en.contactPage.hero.heading }}</h1>
+        <p class="contact-lead">{{ en.contactPage.hero.lead }}</p>
 
-    <div class="contact-details">
-      {% for card in en.contactPage.details %}
-      <div class="contact-card">
-        <div class="contact-card-label">{{ card.label }}</div>
-        {% if card.href %}
-          <a class="contact-card-value" href="{{ card.href }}"{% if card.external %} target="_blank" rel="noopener"{% endif %}>{{ card.value }}</a>
-        {% else %}
-          <div class="contact-card-value">{{ card.value }}</div>
-        {% endif %}
+        <div class="contact-cta-row">
+          <a class="btn btn-primary" href="{{ en.contactPage.hero.cta_email_href }}">{{ en.contactPage.hero.cta_email }}</a>
+          <a class="btn" href="#book">{{ en.contactPage.hero.cta_book }}</a>
+          <a class="btn" href="{{ en.contactPage.hero.cta_linkedin_href }}" target="_blank" rel="noopener">{{ en.contactPage.hero.cta_linkedin }}</a>
+        </div>
+
+        <div class="contact-details">
+          {% for card in en.contactPage.details %}
+          <div class="contact-card">
+            <div class="contact-card-label">{{ card.label }}</div>
+            {% if card.href %}
+              <a class="contact-card-value" href="{{ card.href }}"{% if card.external %} target="_blank" rel="noopener"{% endif %}>{{ card.value }}</a>
+            {% else %}
+              <div class="contact-card-value">{{ card.value }}</div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
       </div>
-      {% endfor %}
+
+      <aside class="contact-reach-card">
+        <div class="contact-reach-head">{{ en.contactPage.reach_card.heading }}</div>
+        {% for row in en.contactPage.reach_card.rows %}
+        <a class="contact-reach-row" href="{{ row.href }}">
+          <span class="contact-reach-text">{{ row.title | safe }}<small>{{ row.sub }}</small></span>
+          <span class="contact-reach-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        {% endfor %}
+      </aside>
+
     </div>
   </div>
 </section>

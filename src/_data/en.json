@@ -290,6 +290,15 @@
       "cta_linkedin": "Connect on LinkedIn",
       "cta_linkedin_href": "https://www.linkedin.com/company/millennium-consulting-georgia/"
     },
+    "reach_card": {
+      "heading": "Reach out about",
+      "rows": [
+        { "title": "Market entry &amp; export",       "sub": "New markets, distribution, representation abroad",  "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Market%20entry%20inquiry" },
+        { "title": "Wine &amp; spirits sourcing",      "sub": "Georgian producers for your portfolio",              "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Sourcing%20inquiry" },
+        { "title": "Marketing &amp; brand development","sub": "Positioning, identity, go-to-market",               "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Brand%20development%20inquiry" },
+        { "title": "Import &amp; representation",      "sub": "Bringing foreign brands into Georgia",              "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Import%20%26%20representation%20inquiry" }
+      ]
+    },
     "details": [
       { "label": "Email", "value": "levan.kurdadze@mcgpartner.com", "href": "mailto:levan.kurdadze@mcgpartner.com" },
       { "label": "Phone", "value": "+995 555 91 66 44", "href": "tel:+995555916644" },
