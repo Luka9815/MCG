@@ -169,6 +169,7 @@
     },
     "services": [
       {
+        "id": "market-entry",
         "eyebrow": "Outbound",
         "title": "Export & market entry",
         "summary": "Taking a product into a market that doesn't know it yet, from strategy to a signed distributor.",
@@ -195,6 +196,7 @@
         }
       },
       {
+        "id": "sourcing",
         "eyebrow": "Sourcing",
         "title": "Wine & spirits sourcing",
         "summary": "Direct, vetted access to producers worth representing, for buyers and importers.",
@@ -221,6 +223,7 @@
         }
       },
       {
+        "id": "marketing",
         "eyebrow": "Positioning",
         "title": "Marketing & brand development",
         "summary": "Repositioning a product for a market it wasn't built for.",
@@ -247,6 +250,7 @@
         }
       },
       {
+        "id": "import",
         "eyebrow": "Inbound",
         "title": "Import & representation",
         "summary": "Local representation for foreign brands entering Georgia and the region.",
@@ -293,10 +297,10 @@
     "reach_card": {
       "heading": "Reach out about",
       "rows": [
-        { "title": "Market entry &amp; export",       "sub": "New markets, distribution, representation abroad",  "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Market%20entry%20inquiry" },
-        { "title": "Wine &amp; spirits sourcing",      "sub": "Georgian producers for your portfolio",              "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Sourcing%20inquiry" },
-        { "title": "Marketing &amp; brand development","sub": "Positioning, identity, go-to-market",               "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Brand%20development%20inquiry" },
-        { "title": "Import &amp; representation",      "sub": "Bringing foreign brands into Georgia",              "href": "mailto:levan.kurdadze@mcgpartner.com?subject=Import%20%26%20representation%20inquiry" }
+        { "title": "Market entry &amp; export",       "sub": "New markets, distribution, representation abroad",  "href": "services.html#market-entry" },
+        { "title": "Wine &amp; spirits sourcing",      "sub": "Georgian producers for your portfolio",              "href": "services.html#sourcing" },
+        { "title": "Marketing &amp; brand development","sub": "Positioning, identity, go-to-market",               "href": "services.html#marketing" },
+        { "title": "Import &amp; representation",      "sub": "Bringing foreign brands into Georgia",              "href": "services.html#import" }
       ]
     },
     "details": [

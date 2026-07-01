@@ -41,7 +41,7 @@ bodyClass: services-page
     <p style="font-size:12px;letter-spacing:.04em;color:var(--muted);margin:0 0 6px;">{{ en.servicesPage.hero.hint }} &darr;</p>
 
     {% for svc in en.servicesPage.services %}
-    <details class="svc-item{% if svc.reverse %} reverse{% endif %}"{% if svc.open %} open{% endif %}>
+    <details id="{{ svc.id }}" class="svc-item{% if svc.reverse %} reverse{% endif %}"{% if svc.open %} open{% endif %}>
       <summary class="svc-head">
         <div class="svc-h-copy">
           <p class="svc-h-eyebrow">{{ svc.eyebrow }}</p>
@@ -96,3 +96,19 @@ bodyClass: services-page
     <a class="btn btn-primary" href="contact.html">{{ en.servicesPage.cta.button }}</a>
   </div>
 </section>
+
+<script>
+(function () {
+  function openFromHash() {
+    var hash = location.hash.slice(1);
+    if (!hash) return;
+    var el = document.getElementById(hash);
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
+})();
+</script>
