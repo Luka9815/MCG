@@ -3,7 +3,7 @@
   --brand-dim: rgba(0,154,206,.18);
   --dark: #101820;
   --text: #EDE8DF;
-  --muted: rgba(237,232,223,.58);
+  --muted: rgba(237,232,223,.65);
   --card: rgba(255,248,230,.048);
   --border: rgba(0,154,206,.14);
   --radius: 14px;
@@ -1688,4 +1688,34 @@ a.contact-card-value:hover{ color:var(--brand); }
 @media(prefers-reduced-motion:reduce){
   .contact-card{ transition:none; }
   .contact-scheduler{ transition:none; }
+}
+
+/* =========================
+   Focus-visible outlines (keyboard navigation)
+   Cyan outline for links/interactive; white outline for primary-coloured buttons
+========================= */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid rgba(0,154,206,.90);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.btn:focus-visible {
+  outline: 3px solid rgba(255,255,255,.80);
+  outline-offset: 3px;
+}
+.btn-primary:focus-visible {
+  outline: 3px solid rgba(255,255,255,.80);
+  outline-offset: 3px;
+}
+.lang a:focus-visible {
+  outline: 2px solid rgba(255,255,255,.80);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+.svc-head:focus-visible {
+  outline: 2px solid rgba(0,154,206,.90);
+  outline-offset: 4px;
+  border-radius: 4px;
 }

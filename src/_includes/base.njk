@@ -56,7 +56,7 @@
 <header class="nav">
   <div class="container nav-inner">
     <a class="brand" href="{{ base }}">
-      <img src="{{ assets }}/img/logo.png" alt="Millennium Consulting Georgia logo">
+      <img src="{{ assets }}/img/logo.png" alt="Millennium Consulting Georgia">
     </a>
 
     <nav class="nav-links">
@@ -68,9 +68,9 @@
 
     <div class="nav-right">
       <div class="lang" aria-label="Language switcher">
-        <a{% if lang == "ka" %} class="active"{% endif %} href="{{ langBase }}ka/{{ pageRelPath }}" title="Georgian"><img src="https://cdn-icons-png.flaticon.com/512/197/197380.png" alt="Georgian"></a>
-        <a{% if lang == "en" %} class="active"{% endif %} href="{{ langBase }}en/{{ pageRelPath }}" title="English"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="English"></a>
-        <a{% if lang == "ru" %} class="active"{% endif %} href="{{ langBase }}ru/{{ pageRelPath }}" title="Russian"><img src="https://cdn-icons-png.flaticon.com/512/197/197408.png" alt="Russian"></a>
+        <a{% if lang == "ka" %} class="active"{% endif %} aria-label="ქართული" href="{{ langBase }}ka/{{ pageRelPath }}"><img src="https://cdn-icons-png.flaticon.com/512/197/197380.png" alt="" aria-hidden="true"></a>
+        <a{% if lang == "en" %} class="active"{% endif %} aria-label="English" href="{{ langBase }}en/{{ pageRelPath }}"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="" aria-hidden="true"></a>
+        <a{% if lang == "ru" %} class="active"{% endif %} aria-label="Русский" href="{{ langBase }}ru/{{ pageRelPath }}"><img src="https://cdn-icons-png.flaticon.com/512/197/197408.png" alt="" aria-hidden="true"></a>
       </div>
       <a class="btn btn-primary" href="{{ base }}contact.html">{{ ka.nav_cta if lang == 'ka' else (ru.nav_cta if lang == 'ru' else en.nav_cta) }}</a>
     </div>

@@ -1,0 +1,90 @@
+---
+permalink: /404.html
+eleventyExcludeFromCollections: true
+layout: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page Not Found — Millennium Consulting Georgia</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="{{ site.baseUrl }}/assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="{{ site.baseUrl }}/assets/img/favicon-32.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:'Jost',ui-sans-serif,system-ui,sans-serif;
+      background:#101820;
+      color:#EDE8DF;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      text-align:center;
+      padding:48px 24px;
+    }
+    .logo{margin-bottom:52px}
+    .logo img{height:80px;width:auto}
+    .four{
+      font-family:'Cormorant Garamond',Georgia,serif;
+      font-size:clamp(96px,22vw,160px);
+      font-weight:300;
+      font-style:italic;
+      color:rgba(0,154,206,.35);
+      line-height:1;
+      margin-bottom:8px;
+      user-select:none;
+    }
+    h1{
+      font-family:'Cormorant Garamond',Georgia,serif;
+      font-weight:400;
+      font-size:clamp(20px,3.5vw,28px);
+      letter-spacing:-.1px;
+      margin-bottom:12px;
+    }
+    p{
+      font-size:15px;
+      color:rgba(237,232,223,.65);
+      line-height:1.65;
+      max-width:36ch;
+      margin-bottom:40px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 30px;
+      border-radius:999px;
+      background:#009ACE;
+      border:none;
+      color:#06131a;
+      font-family:'Jost',sans-serif;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:.3px;
+      text-decoration:none;
+      transition:background .18s ease,color .18s ease;
+    }
+    .btn:hover{background:#0089b8;color:#fff}
+    .btn:focus-visible{outline:3px solid rgba(255,255,255,.80);outline-offset:3px}
+  </style>
+</head>
+<body>
+  <nav class="logo">
+    <a href="{{ site.baseUrl }}/en/">
+      <img src="{{ site.baseUrl }}/assets/img/logo.png" alt="Millennium Consulting Georgia">
+    </a>
+  </nav>
+  <div class="four" aria-hidden="true">404</div>
+  <h1>Page not found</h1>
+  <p>The page you're looking for doesn't exist or has been moved.</p>
+  <a class="btn" href="{{ site.baseUrl }}/en/">Back to home</a>
+</body>
+</html>
