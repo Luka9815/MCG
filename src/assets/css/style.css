@@ -1501,3 +1501,119 @@ body.home-page .h1{
   .svc-item[open] .svc-body{ animation:none; }
   .svc-toggle{ transition:none; }
 }
+
+/* =========================
+   Contact page
+========================= */
+.contact-page main{ position:relative; z-index:1; }
+
+.contact-hero{
+  padding:clamp(60px,10vw,96px) 0 clamp(48px,7vw,80px);
+}
+
+.contact-h1{
+  font-family:var(--ff-display);
+  font-size:clamp(36px,6vw,64px);
+  font-weight:400;
+  line-height:1.05;
+  letter-spacing:-.2px;
+  margin:0 0 18px;
+}
+
+.contact-lead{
+  max-width:58ch;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.65;
+  margin:0 0 32px;
+}
+
+.contact-cta-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:52px;
+}
+
+.contact-details{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+  max-width:720px;
+}
+
+.contact-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:22px 24px;
+  transition:border-color .2s ease, transform .2s ease;
+}
+
+.contact-card:hover{
+  border-color:rgba(0,154,206,.38);
+  transform:translateY(-2px);
+}
+
+.contact-card-label{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--brand);
+  margin-bottom:8px;
+}
+
+.contact-card-value{
+  font-size:15px;
+  color:var(--text);
+  word-break:break-word;
+}
+
+a.contact-card-value:hover{ color:var(--brand); }
+
+.contact-book{
+  padding:clamp(56px,8vw,80px) 0;
+  border-top:1px solid var(--border);
+}
+
+.contact-book-head{ margin-bottom:26px; }
+
+.contact-book-h2{
+  font-family:var(--ff-display);
+  font-size:clamp(28px,4vw,44px);
+  font-weight:400;
+  line-height:1.08;
+  margin:0 0 12px;
+}
+
+.contact-book-lead{
+  color:var(--muted);
+  font-size:15px;
+  margin:0;
+  max-width:54ch;
+}
+
+.contact-book-actions{ margin-bottom:22px; }
+
+.contact-scheduler{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:max-height .45s ease, opacity .35s ease;
+}
+
+.contact-scheduler.open{
+  max-height:820px;
+  opacity:1;
+}
+
+@media(max-width:640px){
+  .contact-details{ grid-template-columns:1fr; }
+  .contact-cta-row{ flex-direction:column; align-items:flex-start; }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .contact-card{ transition:none; }
+  .contact-scheduler{ transition:none; }
+}

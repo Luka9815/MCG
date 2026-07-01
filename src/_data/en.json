@@ -278,5 +278,31 @@
       "lead": "Tell us what you're trying to move, and where. We'll map the route.",
       "button": "Start the Conversation"
     }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "heading": "Get in touch",
+      "lead": "Whether you are entering a new market, sourcing Georgian wine and spirits, or building a brand for export, start the conversation here.",
+      "cta_email": "Email us",
+      "cta_email_href": "mailto:levan.kurdadze@mcgpartner.com",
+      "cta_book": "Book a meeting",
+      "cta_linkedin": "Connect on LinkedIn",
+      "cta_linkedin_href": "https://www.linkedin.com/company/millennium-consulting-georgia/"
+    },
+    "details": [
+      { "label": "Email", "value": "levan.kurdadze@mcgpartner.com", "href": "mailto:levan.kurdadze@mcgpartner.com" },
+      { "label": "Phone", "value": "+995 555 91 66 44", "href": "tel:+995555916644" },
+      { "label": "LinkedIn", "value": "Millennium Consulting Georgia", "href": "https://www.linkedin.com/company/millennium-consulting-georgia/", "external": true },
+      { "label": "Based in", "value": "Tbilisi, Georgia" }
+    ],
+    "booking": {
+      "eyebrow": "Schedule",
+      "heading": "Book a meeting",
+      "lead": "Prefer to talk live? Choose a time that suits you and we will meet by video call.",
+      "button_open": "Open the calendar",
+      "button_close": "Hide the calendar",
+      "iframe_src": "https://calendar.app.google/57fWmYwRU34c41ndA"
+    }
   }
 }
