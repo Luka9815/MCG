@@ -2,13 +2,28 @@
 {% set assets = "../../assets" if isNested else "../assets" %}
 {% set base = "../" if isNested else "./" %}
 {% set langBase = "../../" if isNested else "../" %}
+{% set _pageKey = pageRelPath | replace(".html", "") %}
+{% set _seoEntry = en.seo[_pageKey] if (lang == "en" and en.seo) else false %}
+{% set _seoTitle = (_seoEntry.title if _seoEntry else title) or site.title %}
+{% set _seoDesc = (_seoEntry.description if _seoEntry else metaDesc) or site.description %}
 <!doctype html>
 <html lang="{{ lang }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{ title }}</title>
-  {% if metaDesc %}<meta name="description" content="{{ metaDesc }}">{% endif %}
+  <title>{{ _seoTitle }}</title>
+  {% if _seoDesc %}<meta name="description" content="{{ _seoDesc }}">{% endif %}
+  <link rel="canonical" href="{{ site.baseUrl }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.baseUrl }}{{ page.url }}">
+  <meta property="og:title" content="{{ _seoTitle }}">
+  {% if _seoDesc %}<meta property="og:description" content="{{ _seoDesc }}">{% endif %}
+  <meta property="og:site_name" content="Millennium Consulting Georgia">
+  <meta property="og:image" content="{{ site.baseUrl }}/assets/img/home-bg.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ _seoTitle }}">
+  {% if _seoDesc %}<meta name="twitter:description" content="{{ _seoDesc }}">{% endif %}
+  <meta name="twitter:image" content="{{ site.baseUrl }}/assets/img/home-bg.png">
   <link rel="icon" href="{{ assets }}/img/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="{{ assets }}/img/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="{{ assets }}/img/favicon-180.png">
@@ -18,6 +33,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <link rel="stylesheet" href="{{ assets }}/css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Millennium Consulting Georgia",
+    "url": "{{ site.baseUrl }}",
+    "logo": "{{ site.baseUrl }}/assets/img/logo.png",
+    "email": "levan.kurdadze@mcgpartner.com",
+    "telephone": "+995 555 91 66 44",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tbilisi",
+      "addressCountry": "GE"
+    },
+    "sameAs": ["https://www.linkedin.com/company/millennium-consulting-georgia/"]
+  }
+  </script>
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 

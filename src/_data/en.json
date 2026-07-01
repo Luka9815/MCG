@@ -3,6 +3,20 @@
     "title": "MCG — Georgian Wine & Spirits Export",
     "description": "MCG connects Georgian wine and spirits producers to international markets through expert export management, import sourcing, and brand marketing."
   },
+  "seo": {
+    "index": {
+      "title": "Millennium Consulting Georgia | Wine, Spirits & Export Trade",
+      "description": "International trade and marketing consultancy for wine, spirits and general import and export. Market entry, sourcing, brand development and representation."
+    },
+    "about": {
+      "title": "About | Millennium Consulting Georgia",
+      "description": "Millennium Consulting Georgia is led by Levan Kurdadze, drawing on 10+ years of international wine, spirits and export experience across 16 countries."
+    },
+    "services": {
+      "title": "Services | Millennium Consulting Georgia",
+      "description": "Export and market entry, wine and spirits sourcing, marketing and brand development, and import and representation for international trade partners."
+    }
+  },
   "hero": {
     "headline": "Wine, spirits, and a proven route to market.",
     "subtext": "MCG is led by Levan Kurdadze, an international trade consultant with 10+ years and 31 partnerships secured across 16 markets. We help producers enter and grow in export markets, from first strategy to active sales.",
