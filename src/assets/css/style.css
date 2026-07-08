@@ -1719,3 +1719,48 @@ summary:focus-visible {
   outline-offset: 4px;
   border-radius: 4px;
 }
+
+/* =========================
+   Georgian (KA) typography fix
+   Cormorant Garamond and Jost have no Georgian glyphs, so KA text falls
+   back to the system serif (Sylfaen) which is oversized and wraps every
+   1-2 words. Swap in Georgian-capable webfonts and rebalance sizes
+   (~15-20% smaller than the Latin values) for every element that uses
+   var(--ff-display). EN/RU are untouched — everything here is scoped
+   under html[lang="ka"].
+========================= */
+html[lang="ka"]{
+  --ff-display: 'Noto Serif Georgian', Georgia, serif;
+}
+html[lang="ka"] body{
+  font-family: 'Noto Sans Georgian', ui-sans-serif, system-ui, sans-serif;
+}
+
+html[lang="ka"] .h1{ font-size: clamp(32px, 5vw, 42px); }
+html[lang="ka"] body.home-page .h1{ font-size: clamp(40px, 6vw, 56px); }
+html[lang="ka"] .page-title h1{ font-size: clamp(26px, 4.5vw, 33px); }
+html[lang="ka"] .section-heading{ font-size: clamp(25px, 4vw, 31px); }
+html[lang="ka"] .stat-value{ font-size: clamp(38px, 7vw, 48px); }
+html[lang="ka"] .svc-card--text h3{ font-size: 18px; }
+html[lang="ka"] .about-teaser h2{ font-size: 30px; }
+html[lang="ka"] .phase-number{ font-size: clamp(34px, 6vw, 45px); }
+html[lang="ka"] .cta-band h2{ font-size: clamp(26px, 5vw, 35px); }
+html[lang="ka"] .about-h1{
+  font-size: clamp(30px, 5vw, 60px);
+  max-width: 34ch;
+}
+html[lang="ka"] .about-pr-body h2{ font-size: clamp(22px, 2.9vw, 35px); }
+html[lang="ka"] .about-record-head h2{ font-size: clamp(20px, 2.5vw, 30px); }
+html[lang="ka"] .about-stat-n{ font-size: clamp(28px, 3.3vw, 42px); }
+html[lang="ka"] .about-markets-h2{ font-size: clamp(20px, 2.65vw, 32px); }
+html[lang="ka"] .about-creds-h2{ font-size: clamp(20px, 2.5vw, 30px); }
+html[lang="ka"] .about-portrait-name{ font-size: 18px; }
+html[lang="ka"] .svc-intro h1{ font-size: clamp(32px, 4.5vw, 50px); }
+html[lang="ka"] .svc-h-title{ font-size: clamp(22px, 2.65vw, 30px); }
+html[lang="ka"] .svc-chip .n{ font-size: 25px; }
+html[lang="ka"] .contact-h1{ font-size: clamp(30px, 5vw, 53px); }
+html[lang="ka"] .contact-book-h2{ font-size: clamp(23px, 3.3vw, 37px); }
+html[lang="ka"] .leaflet-popup-content strong{
+  font-family: 'Noto Serif Georgian', Georgia, serif;
+  font-size: 12px;
+}
