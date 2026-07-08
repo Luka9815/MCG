@@ -3,7 +3,8 @@
 {% set base = "../" if isNested else "./" %}
 {% set langBase = "../../" if isNested else "../" %}
 {% set _pageKey = pageRelPath | replace(".html", "") %}
-{% set _seoEntry = en.seo[_pageKey] if (lang == "en" and en.seo) else false %}
+{% set _langData = {"en": en, "ka": ka, "ru": ru}[lang] %}
+{% set _seoEntry = _langData.seo[_pageKey] if (_langData and _langData.seo and _langData.seo[_pageKey]) else false %}
 {% set _seoTitle = (_seoEntry.title if _seoEntry else title) or site.title %}
 {% set _seoDesc = (_seoEntry.description if _seoEntry else metaDesc) or site.description %}
 <!doctype html>

@@ -83,7 +83,7 @@
   },
   "markets": {
     "heading": "Our Network",
-    "subheading": "The founding team's established relationships span 15 countries across Europe, Asia, and North America.",
+    "subheading": "The founding team's established relationships span 16 countries across Europe, Asia, and North America.",
     "countries": [
       {"name":"Germany","lat":51.2,"lng":10.5,"note":""},
       {"name":"Poland","lat":51.9,"lng":19.1,"note":""},
@@ -112,9 +112,13 @@
   "footer": {
     "tagline": "Georgian Wine & Spirits. Connected to the World.",
     "address": "[Address, Tbilisi, Georgia]",
-    "email": "[email@mcg.ge]",
-    "phone": "[+995 XXX XXX XXX]",
+    "email": "levan.kurdadze@mcgpartner.com",
+    "phone": "+995 555 91 66 44",
     "copyright": "MCG. All rights reserved."
+  },
+  "ui": {
+    "languages_label": "Languages",
+    "track_record_label": "Track record"
   },
   "aboutPage": {
     "hero": {
